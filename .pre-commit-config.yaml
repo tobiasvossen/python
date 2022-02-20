@@ -19,3 +19,9 @@ repos:
         entry: pipenv run test
         files: .*.py
         stages: [push]
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v1.2.0
+    hooks:
+      - id: conventional-pre-commit
+        name: commit-msg test
+        stages: [commit-msg]
