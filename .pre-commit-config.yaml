@@ -1,0 +1,13 @@
+repos:
+  - repo: local
+    hooks:
+      - id: lint
+        name: pre-commit lint
+        language: system
+        entry: pipenv run lint
+        files: .*.py
+      - id: format
+        name: pre-commit format
+        language: system
+        entry: pipenv run format
+        files: .*.py

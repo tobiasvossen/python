@@ -9,10 +9,12 @@ name = "pypi"
 pytest = "*"
 pylint = "*"
 black = "*"
+pre-commit = "*"
 
 [requires]
 python_version = "3.8"
 
 [scripts]
 lint = "pylint main.py tests"
+format = "black main.py tests"
 test = "pytest"

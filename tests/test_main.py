@@ -1,5 +1,5 @@
 from main import welcome
 
 
-def test_main():
+def test_welcome():
     assert "Hello" in welcome()
