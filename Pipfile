@@ -7,9 +7,11 @@ name = "pypi"
 
 [dev-packages]
 pytest = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.8"
 
 [scripts]
+lint = "pylint main.py tests"
 test = "pytest"
