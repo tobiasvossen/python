@@ -15,6 +15,7 @@ pre-commit = "*"
 python_version = "3.8"
 
 [scripts]
-lint = "pylint main.py tests"
-format = "black main.py tests"
+lint = "bash -c 'pylint main.py tests'"
+format = "bash -c 'black main.py tests'"
 test = "pytest"
+prepare = "bash -c 'pre-commit install; pre-commit install --hook-type commit-msg; pre-commit install --hook-type pre-push;'"

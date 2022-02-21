@@ -5,13 +5,13 @@ repos:
         name: pre-commit lint
         language: system
         entry: pipenv run lint
-        files: .*.py
+        exclude: .pylintrc
         stages: [commit]
       - id: format
         name: pre-commit format
         language: system
         entry: pipenv run format
-        files: .*.py
+        exclude: .pylintrc
         stages: [commit]
       - id: test
         name: pre-push test
